@@ -24,7 +24,6 @@ app.get('/', function(req, res){
 
 app.post('/api/shorturl/new', function(req, res){
   
-  //let randomNumber = Math.floor(Math.random() * 100) + 1;
   Url.count({}, function(err, count){
     let index = count;
 
